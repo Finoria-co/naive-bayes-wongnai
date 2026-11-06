@@ -15,8 +15,9 @@
 ```
 data/        ชุดข้อมูล (zip) + ไฟล์ label
 results/     กราฟผลลัพธ์
-naive_bayes.py      โปรแกรมหลัก
-prepare_labels.py   ดึง label ดาวมาเก็บไว้ (รันครั้งเดียว)
+naive_bayes.py      โปรแกรมหลัก (Naive Bayes + Accuracy)
+plots.py            วาด heat map / word cloud
+prepare_labels.py   ดึง label ดาวมาเก็บไว้ (รันครั้งเดียว ทำไว้แล้ว)
 ```
 
 ## วิธีรัน
@@ -24,3 +25,11 @@ prepare_labels.py   ดึง label ดาวมาเก็บไว้ (รั
 pip install -r requirements.txt
 python naive_bayes.py
 ```
+
+## ผลลัพธ์
+- Train 40,000 รีวิว / Test 6,203 รีวิว
+- **Accuracy = 52.09%** (3,231 / 6,203)
+- ข้อมูลไม่สมดุล (1 ดาวมีแค่ 1%, 4 ดาวมี 47%) โมเดลจึงทายคลาส 1–2 ดาวได้ยาก
+
+![heatmap](results/heatmap.png)
+![wordcloud](results/wordcloud.png)
