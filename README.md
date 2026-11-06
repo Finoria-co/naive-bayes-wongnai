@@ -13,7 +13,7 @@
 
 ## โครงสร้าง
 ```
-data/            ชุดข้อมูลจากอาจารย์ (ตัดคำแล้ว) + ไฟล์ label
+data/            (ตัดคำแล้ว) + ไฟล์ label
 data/original/   ชุดข้อมูล Wongnai ต้นฉบับ (รีวิว + คะแนนดาว 1-5)
 results/     กราฟผลลัพธ์
 naive_bayes.py      โปรแกรมหลัก (Naive Bayes + Accuracy)
