@@ -90,3 +90,8 @@ if __name__ == "__main__":
         if predict(review, prior, word_count, total_words, vocab) == true_label:
             correct += 1
     print(f"Accuracy = {correct}/{len(test_labels)} = {correct / len(test_labels):.2%}")
+
+    # ---------- 5) Heat map + 6) Word cloud ----------
+    from plots import plot_heatmap, plot_wordcloud
+    plot_heatmap(prior, word_count, total_words, vocab, likelihood, "results/heatmap.png")
+    plot_wordcloud(word_count, "results/wordcloud.png")
