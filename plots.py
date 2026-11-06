@@ -9,8 +9,6 @@ from wordcloud import WordCloud
 # ---------- ฟอนต์ภาษาไทย ----------
 FONT_CANDIDATES = [
     "C:/Windows/Fonts/tahoma.ttf",                      # Windows
-    "/System/Library/Fonts/Supplemental/Tahoma.ttf",    # macOS
-    "/usr/share/fonts/opentype/tlwg/Loma.otf",          # Linux
 ]
 FONT_PATH = next((f for f in FONT_CANDIDATES if os.path.exists(f)), None)
 if FONT_PATH:
