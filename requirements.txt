@@ -1,5 +1,4 @@
 pythainlp
 pandas
-pyarrow
 matplotlib
 wordcloud
