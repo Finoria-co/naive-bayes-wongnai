@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.vscode/
+# ไฟล์ที่แตก zip แล้ว (ใช้ zip แทน)
+data/*.txt
+!data/*_labels.txt
