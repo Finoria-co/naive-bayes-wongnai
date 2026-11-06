@@ -13,7 +13,8 @@
 
 ## โครงสร้าง
 ```
-data/        ชุดข้อมูล (zip) + ไฟล์ label
+data/            ชุดข้อมูลจากอาจารย์ (ตัดคำแล้ว) + ไฟล์ label
+data/original/   ชุดข้อมูล Wongnai ต้นฉบับ (รีวิว + คะแนนดาว 1-5)
 results/     กราฟผลลัพธ์
 naive_bayes.py      โปรแกรมหลัก (Naive Bayes + Accuracy)
 plots.py            วาด heat map / word cloud
@@ -25,6 +26,11 @@ prepare_labels.py   ดึง label ดาวมาเก็บไว้ (รั
 pip install -r requirements.txt
 python naive_bayes.py
 ```
+
+## ที่มาของข้อมูล
+Wongnai Reviews: https://github.com/wongnai/wongnai-corpus (LGPL-3.0)
+ไฟล์ของอาจารย์ไม่มีคะแนนดาว จึงใช้คอลัมน์ `star_rating` จากไฟล์ต้นฉบับใน `data/original/`
+(`python prepare_labels.py` จะสร้าง `train_labels.txt` / `test_labels.txt`)
 
 ## ผลลัพธ์
 - Train 40,000 รีวิว / Test 6,203 รีวิว
